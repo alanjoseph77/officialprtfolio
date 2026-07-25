@@ -1,0 +1,122 @@
+/* --- Research Page Specifics --- */
+
+.research_head {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.res-article {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .research_head {
+        padding-top: 2rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .res-article {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .hp_sidebar .button.is-link.is-icon {
+        display: block !important;
+    }
+    .hp_sidebar .text-size-regular {
+        display: inline !important;
+        margin-right: 0.6rem;
+    }
+    .hp_sidebar {
+        padding-top: 2rem !important;
+    }
+    .hp_sidebar-items {
+        padding-top: 2rem !important;
+    }
+}
+
+.hp_sidebar {
+    padding-top: 2rem !important;
+}
+
+/* Sticky sidebar + overflow:auto can cause Chromium to leave stale
+   pixels from one thumbnail painted behind the next item on scroll.
+   Forcing each item/image onto its own compositor layer fixes it. */
+.hp_sidebar-item {
+    isolation: isolate;
+    contain: layout paint;
+}
+
+.hp_sidebar-image-container,
+.hp_sidebar-image {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+
+.hp_sidebar-image {
+    object-fit: cover;
+}
+
+.research_head-cover img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.w-richtext figure img {
+    max-width: 100%;
+    max-height: 600px;
+    height: auto;
+    object-fit: contain;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* 3-phone showcase for article cover */
+.research-phone-showcase {
+    display: flex;
+    gap: 1.125rem;
+    align-items: flex-end;
+    justify-content: center;
+    background: #0d0d0d;
+    border-radius: 16px;
+    padding: 2.5rem 2rem 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.research-phone-showcase img {
+    flex: 1;
+    min-width: 0;
+    height: 380px;
+    border-radius: 18px 18px 0 0;
+    object-fit: cover;
+    object-position: top center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.research-phone-showcase img:nth-child(2) {
+    height: 440px;
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 767px) {
+    .research-phone-showcase {
+        gap: 0.75rem;
+        padding: 1.5rem 1rem 0;
+    }
+
+    .research-phone-showcase img {
+        height: 220px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .research-phone-showcase img:nth-child(2) {
+        height: 260px;
+    }
+}

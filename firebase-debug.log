@@ -1,0 +1,42 @@
+[debug] [2026-07-25T07:06:02.811Z] ----------------------------------------------------------------------
+[debug] [2026-07-25T07:06:02.813Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-07-25T07:06:02.814Z] CLI Version:   15.24.0
+[debug] [2026-07-25T07:06:02.814Z] Platform:      win32
+[debug] [2026-07-25T07:06:02.814Z] Node Version:  v20.19.4
+[debug] [2026-07-25T07:06:02.814Z] Detected Agent: unknown
+[debug] [2026-07-25T07:06:02.814Z] Time:          Sat Jul 25 2026 12:36:02 GMT+0530 (India Standard Time)
+[debug] [2026-07-25T07:06:02.814Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-25T07:06:27.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-25T07:06:27.878Z] > authorizing via signed-in user (alanmonichan62@gmail.com)
+[debug] [2026-07-25T07:06:27.878Z] [iam] checking project portfolio-a21d4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-25T07:06:27.879Z] Checked if tokens are valid: false, expires at: 1784962398502
+[debug] [2026-07-25T07:06:27.880Z] Checked if tokens are valid: false, expires at: 1784962398502
+[debug] [2026-07-25T07:06:27.880Z] > refreshing access token with scopes: []
+[debug] [2026-07-25T07:06:27.882Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-07-25T07:06:27.882Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-25T07:06:28.125Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-07-25T07:06:28.126Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-25T07:06:28.152Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-a21d4:testIamPermissions [none]
+[debug] [2026-07-25T07:06:28.153Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-a21d4:testIamPermissions  x-goog-user-project=portfolio-a21d4
+[debug] [2026-07-25T07:06:28.153Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-a21d4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-25T07:06:29.536Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-a21d4:testIamPermissions 200
+[debug] [2026-07-25T07:06:29.536Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-a21d4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-25T07:06:29.536Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:29.537Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:29.537Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-a21d4 [none]
+[debug] [2026-07-25T07:06:30.354Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-a21d4 200
+[debug] [2026-07-25T07:06:30.354Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-a21d4 {"projectId":"portfolio-a21d4","projectNumber":"459209463569","displayName":"Portfolio","name":"projects/portfolio-a21d4","resources":{"hostingSite":"portfolio-a21d4"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_4c931751-dd86-4bcc-b903-245df7830b77"}
+[info] 
+[info] === Deploying to 'portfolio-a21d4'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-25T07:06:30.357Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:30.357Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:30.357Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-a21d4/sites/portfolioalan [none]
+[debug] [2026-07-25T07:06:31.479Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-a21d4/sites/portfolioalan 200
+[debug] [2026-07-25T07:06:31.479Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-a21d4/sites/portfolioalan {"name":"projects/portfolio-a21d4/sites/portfolioalan","defaultUrl":"https://portfolioalan.web.app","appId":"1:459209463569:web:c3019b3a58c6bb2d009eb0","type":"USER_SITE"}
+[debug] [2026-07-25T07:06:31.481Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:31.481Z] Checked if tokens are valid: true, expires at: 1784966787126
+[debug] [2026-07-25T07:06:31.482Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolioalan/versions [none]
+[debug] [2026-07-25T07:06:31.482Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolioalan/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

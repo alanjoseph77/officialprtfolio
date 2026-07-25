@@ -1,0 +1,25 @@
+# Alan Joseph Monichan
+
+> Software Developer, Data Analyst, and AI & BI Specialist based in Surathkal, India. Builds full-stack web apps, cross-platform mobile apps, AI/RAG pipelines, and data analytics dashboards. Currently a Junior Project Assistant at the Department of CSD, NITK Surathkal, and a freelance full-stack developer at Nasscript Software Innovations.
+
+## Profile
+
+- MCA (Master of Computer Applications), Mar Athanasios College, MG University, 2023–2025.
+- BCA (Bachelor of Computer Applications), Devamatha College, Kannur University, 2020–2023.
+- Core skills: React.js, Django, React Native, Flutter, Python, Power BI/DAX, ETL automation, LLM fine-tuning (Mistral, Gemini), RAG pipelines, OpenCV/TensorFlow computer vision, embedded C/C++ for IoT, Firebase, Node.js, Three.js.
+- Delivered data-driven solutions for Tata Motors and Government of Goa initiatives.
+
+## Pages
+
+- [Home](https://portfolioalan.web.app/): Landing page introducing Alan's work, experience, and focus areas.
+- [About](https://portfolioalan.web.app/src/about.html): Full bio, work experience timeline, certifications, education, and skill areas (Mobile, AI & IoT).
+- [Case Studies](https://portfolioalan.web.app/src/research.html): Project case studies, including a Three.js mobile app experience (threejs-playbook) and Studio Otaga (a no-code visual website builder).
+
+## Client & Personal Websites (featured on the Projects section of the home page)
+
+- [Kripa Enterprises](https://furniture-shop-website-zeta.vercel.app/): Marketing website for a teak wood furniture and interiors brand, built around full-bleed architectural photography.
+- [Omnia](https://omnia-premium-fashion-store.vercel.app/): A luxury fashion e-commerce landing experience with a full-bleed lookbook hero and seasonal collection merchandising. Built with React and Vite.
+
+## Contact
+
+Reach out via the contact links on the site's home page.

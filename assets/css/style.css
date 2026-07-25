@@ -1,0 +1,535 @@
+/* ///////////////////// START OF GLOBAL EDITS ///////////////////// */
+
+main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+html {
+    font-size: calc(0.00006250000000007638rem + 0.694375vw);
+}
+
+@media screen and (max-width:1920px) {
+    html {
+        font-size: calc(0.00006249999999985434rem + 0.6943750000000002vw);
+    }
+}
+
+@media screen and (max-width:1440px) {
+    html {
+        font-size: calc(-0.00038975501113586164rem + 0.6948775055679287vw);
+    }
+}
+
+@media screen and (max-width:991px) {
+    html {
+        font-size: 0.625rem;
+    }
+}
+
+.is-anchor {
+    pointer-events: none;
+}
+
+/* --- Font Smoothing --- */
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Make sure containers never lose their center alignment*/
+
+.container-medium,
+.container-small,
+.container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/* --- Links --- */
+
+a .link-arrow {
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+}
+
+a:hover .link-arrow {
+    transform: translateX(0.25rem);
+}
+
+/* --- Rich Text --- */
+
+/* Get rid of top margin on first element in any rich text element */
+
+.w-richtext> :not(div):first-child,
+.w-richtext>div:first-child> :first-child {
+    margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+
+.w-richtext>:last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.text-rich-text li::marker {
+    color: black;
+}
+
+/* --- Inherit links styling --- */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+}
+
+/* --- Prevent --- */
+
+/* Prevent all click and hover interaction with an element */
+
+.pointer-events-off {
+    pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+
+.pointer-events-on {
+    pointer-events: auto;
+}
+
+/*Apply "..." after 3 lines of text */
+
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." at 100% width */
+
+.truncate-width {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Removes native scrollbar */
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Adds inline flex display */
+
+.display-inlineflex {
+    display: inline-flex;
+}
+
+/* --- These classes are never overwritten --- */
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (max-width: 991px),
+       screen and (max-width: 767px),
+       screen and (max-width: 479px) {
+    .hide,
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hide-mobile-landscape {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+/* ///////////////////// END OF GLOBAL EDITS ///////////////////// */
+
+/* ///////////////////// START OF SPACINGS ///////////////////// */
+
+.margin-0 {
+    margin: 0rem !important;
+}
+
+.padding-0 {
+    padding: 0rem !important;
+}
+
+.spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+.margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+/* ///////////////////// END OF SPACINGS ///////////////////// */
+
+/* ///////////////////// ELEMENTS ///////////////////// */
+
+/* Menu */
+
+@media screen and (max-width: 374px) {
+    .nav_brand-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    [data-nav-size="small"] .nav_brand-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-wrapper.is-short {
+        min-height: calc(100vh - 7.4rem);
+    }
+}
+
+.main-wrapper.is-short .section_footer {
+    margin-top: auto;
+}
+
+/* Button Arrows */
+
+@media screen and (min-width: 992px) {
+    .button .text-size-large {
+        padding: 0.4rem 0;
+        border-bottom: 1px solid transparent;
+        transition-property: border-color;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+    .button .text-size-small {
+        padding: 0.2rem 0;
+        border-bottom: 1px solid transparent;
+        transition-property: border-color;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    }
+    .link-arrow {
+        position: relative;
+    }
+    .button .text-size-small+.link-arrow {
+        transform: translate(0rem, -0.1rem);
+    }
+    .button:hover .text-size-small+.link-arrow {
+        transform: translate(0.2rem, -0.1rem);
+    }
+    .button:hover .text-size-large,
+    .button:hover .text-size-small {
+        border-bottom: 1px solid black;
+    }
+}
+
+/* ///////////////////// NAVIGATION ///////////////////// */
+
+.nav_wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav_brand {
+    text-decoration: none;
+    z-index: 1500;
+}
+
+.text-logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.nav_menu-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.menu_link {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #000;
+    text-decoration: none;
+}
+
+/* ---- MOBILE MENU ---- */
+
+/* Suppress Webflow's built-in overlay completely */
+.w-nav-overlay {
+    display: none !important;
+}
+
+/* Hamburger button lines */
+.nav_button {
+    display: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 9010;
+    position: relative;
+    border-bottom: none !important;
+}
+
+.nav_button-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    width: 24px;
+}
+
+.menu_top-line,
+.menu_middle-line,
+.menu_bottom-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    margin: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger → X when open */
+.nav_button.is-open .menu_top-line {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav_button.is-open .menu_middle-line {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.nav_button.is-open .menu_bottom-line {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Custom full-screen mobile overlay */
+.mob-nav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 9000;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
+.mob-nav.is-open {
+    display: flex;
+}
+
+.mob-nav__link {
+    display: block;
+    width: 100%;
+    font-size: clamp(2.6rem, 10.5vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+
+.mob-nav__link:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mob-nav__link:hover {
+    opacity: 0.35;
+}
+
+/* Body scroll lock when menu is open */
+body.mob-nav-open {
+    overflow: hidden;
+}
+
+/* ///////////////////// CATEGORY SECTION TAGS ///////////////////// */
+
+.category-tag {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #111;
+}
+
+[data-category="data-analytics"] .category-tag {
+    background-color: #1a56db;
+}
+
+[data-category="web"] .category-tag {
+    background-color: #6b21a8;
+}
+
+[data-category="mobile"] .category-tag {
+    background-color: #057a55;
+}
+
+[data-category="ai-iot"] .category-tag {
+    background-color: #b45309;
+}
+
+[data-category="digital-twin"] .category-tag {
+    background-color: #0694a2;
+}
+
+[data-category="threejs"] .category-tag {
+    background-color: #c53030;
+}
+
+@media screen and (max-width: 991px) {
+    /* Show hamburger on mobile */
+    .nav_button {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hide Webflow's desktop menu on mobile — our custom overlay handles it */
+    .nav_menu-links,
+    .w-nav-menu {
+        display: none !important;
+    }
+
+    /* Navbar sits above the overlay (mob-nav is z-index 9000) */
+    .nav_wrapper {
+        position: relative;
+        z-index: 9005;
+    }
+
+    /* mob-nav punches above page content but the navbar bar stays on top */
+    .mob-nav {
+        z-index: 9001;
+    }
+
+    /* Keep hero content behind overlay */
+    .social-links-container,
+    .hp-hero_logo {
+        z-index: 1;
+    }
+}

@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0d"/>
+      <stop offset="100%" style="stop-color:#111418"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#141820"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f8ef7"/>
+      <stop offset="100%" style="stop-color:#7c5af7"/>
+    </linearGradient>
+    <linearGradient id="llmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2a1a"/>
+      <stop offset="100%" style="stop-color:#141820"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04">
+    <line x1="0" y1="50" x2="900" y2="50" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="100" x2="900" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="150" x2="900" y2="150" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="900" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="350" x2="900" y2="350" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="900" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="450" x2="900" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="90" y1="0" x2="90" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="180" y1="0" x2="180" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="270" y1="0" x2="270" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="540" y1="0" x2="540" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="630" y1="0" x2="630" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="810" y1="0" x2="810" y2="500" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="44" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#4f8ef7" opacity="0.8" letter-spacing="4">RAG PIPELINE — SEMANTIC SEARCH SYSTEM</text>
+
+  <!-- === CODE BLOCK LEFT === -->
+  <rect x="28" y="64" width="190" height="172" rx="8" fill="url(#nodeGrad)" stroke="#4f8ef720" stroke-width="1"/>
+  <rect x="28" y="64" width="190" height="22" rx="8" fill="#1a1f2e"/>
+  <rect x="28" y="78" width="190" height="8" rx="0" fill="#1a1f2e"/>
+  <circle cx="44" cy="75" r="4" fill="#ff5f57"/>
+  <circle cx="58" cy="75" r="4" fill="#febc2e"/>
+  <circle cx="72" cy="75" r="4" fill="#28c840"/>
+  <text x="44" y="106" font-family="'Courier New', monospace" font-size="10" fill="#4f8ef7">import</text>
+  <text x="94" y="106" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0"> sentence_transformers</text>
+  <text x="44" y="122" font-family="'Courier New', monospace" font-size="10" fill="#4f8ef7">from</text>
+  <text x="74" y="122" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0"> langchain</text>
+  <text x="44" y="138" font-family="'Courier New', monospace" font-size="10" fill="#7c5af7">  import</text>
+  <text x="94" y="138" font-family="'Courier New', monospace" font-size="10" fill="#f7c948"> RAG</text>
+  <text x="44" y="158" font-family="'Courier New', monospace" font-size="10" fill="#888">## load documents</text>
+  <text x="44" y="174" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">docs = loader</text>
+  <text x="44" y="190" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">  <tspan fill="#f7c948">.load</tspan>(path)</text>
+  <text x="44" y="210" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">chunks = splitter</text>
+  <text x="44" y="226" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">  <tspan fill="#f7c948">.split</tspan>(docs)</text>
+  <text x="36" y="250" font-family="'Courier New', monospace" font-size="9" fill="#4f8ef7" letter-spacing="1">DOCUMENT INGESTION</text>
+
+  <!-- Arrow 1 -->
+  <line x1="218" y1="150" x2="258" y2="150" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="258,145 268,150 258,155" fill="#4f8ef7" filter="url(#glow)"/>
+
+  <!-- === EMBEDDING NODE === -->
+  <rect x="268" y="92" width="140" height="116" rx="8" fill="url(#nodeGrad)" stroke="#7c5af720" stroke-width="1"/>
+  <text x="338" y="116" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#7c5af7" letter-spacing="2">EMBEDDING</text>
+  <text x="338" y="134" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#7c5af7" letter-spacing="2">MODEL</text>
+  <!-- Embedding dots visualization -->
+  <circle cx="298" cy="156" r="3" fill="#7c5af7" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="314" cy="148" r="3" fill="#7c5af7" opacity="0.7"/>
+  <circle cx="330" cy="162" r="3" fill="#4f8ef7" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="346" cy="144" r="3" fill="#4f8ef7" opacity="0.7"/>
+  <circle cx="362" cy="158" r="3" fill="#7c5af7" opacity="0.9"/>
+  <circle cx="378" cy="150" r="3" fill="#4f8ef7" opacity="0.7"/>
+  <line x1="298" y1="156" x2="314" y2="148" stroke="#7c5af7" stroke-width="1" opacity="0.4"/>
+  <line x1="314" y1="148" x2="330" y2="162" stroke="#5a7af7" stroke-width="1" opacity="0.4"/>
+  <line x1="330" y1="162" x2="346" y2="144" stroke="#4f8ef7" stroke-width="1" opacity="0.4"/>
+  <line x1="346" y1="144" x2="362" y2="158" stroke="#7c5af7" stroke-width="1" opacity="0.4"/>
+  <line x1="362" y1="158" x2="378" y2="150" stroke="#4f8ef7" stroke-width="1" opacity="0.4"/>
+  <text x="338" y="194" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#888">Mistral 7B Embeddings</text>
+  <text x="338" y="220" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#555">dim: 4096 vectors</text>
+
+  <!-- Arrow 2 -->
+  <line x1="408" y1="150" x2="448" y2="150" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="448,145 458,150 448,155" fill="#7c5af7" filter="url(#glow)"/>
+
+  <!-- === VECTOR STORE NODE === -->
+  <rect x="458" y="92" width="130" height="116" rx="8" fill="url(#nodeGrad)" stroke="#f7c94820" stroke-width="1"/>
+  <text x="523" y="116" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#f7c948" letter-spacing="2">VECTOR DB</text>
+  <!-- Vector grid visualization -->
+  <rect x="478" y="126" width="90" height="10" rx="2" fill="#f7c94815" stroke="#f7c94840" stroke-width="1"/>
+  <rect x="478" y="140" width="75" height="10" rx="2" fill="#f7c94810" stroke="#f7c94830" stroke-width="1"/>
+  <rect x="478" y="154" width="85" height="10" rx="2" fill="#f7c94812" stroke="#f7c94835" stroke-width="1"/>
+  <rect x="478" y="168" width="60" height="10" rx="2" fill="#f7c94808" stroke="#f7c94825" stroke-width="1"/>
+  <text x="483" y="134" font-family="'Courier New', monospace" font-size="7" fill="#f7c948" opacity="0.8">[0.82, 0.14, 0.63...]</text>
+  <text x="483" y="148" font-family="'Courier New', monospace" font-size="7" fill="#f7c948" opacity="0.6">[0.71, 0.39, 0.11...]</text>
+  <text x="483" y="162" font-family="'Courier New', monospace" font-size="7" fill="#f7c948" opacity="0.7">[0.44, 0.92, 0.28...]</text>
+  <text x="483" y="176" font-family="'Courier New', monospace" font-size="7" fill="#f7c948" opacity="0.5">[0.19, 0.55, 0.77...]</text>
+  <text x="523" y="210" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#555">FAISS / ChromaDB</text>
+
+  <!-- Arrow 3 -->
+  <line x1="588" y1="150" x2="628" y2="150" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="628,145 638,150 628,155" fill="#f7c948" filter="url(#glow)"/>
+
+  <!-- === LLM NODE === -->
+  <rect x="638" y="64" width="172" height="172" rx="8" fill="url(#llmGrad)" stroke="#28c84020" stroke-width="1"/>
+  <rect x="638" y="64" width="172" height="22" rx="8" fill="#1a2a1a"/>
+  <rect x="638" y="78" width="172" height="8" rx="0" fill="#1a2a1a"/>
+  <text x="724" y="75" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#28c840" letter-spacing="2">MISTRAL 7B · LLM</text>
+  <text x="654" y="106" font-family="'Courier New', monospace" font-size="10" fill="#888">## retrieve + generate</text>
+  <text x="654" y="122" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">context = retriever</text>
+  <text x="654" y="138" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">  <tspan fill="#f7c948">.get_relevant</tspan>(q)</text>
+  <text x="654" y="158" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">answer = llm</text>
+  <text x="654" y="174" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">  <tspan fill="#28c840">.generate</tspan>(</text>
+  <text x="654" y="190" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0">    context, query)</text>
+  <text x="654" y="218" font-family="'Courier New', monospace" font-size="9" fill="#28c840" opacity="0.7">accuracy: 95%+</text>
+  <text x="724" y="248" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#28c840" letter-spacing="1">ANSWER GENERATION</text>
+
+  <!-- === QUERY INPUT === -->
+  <rect x="268" y="290" width="492" height="54" rx="8" fill="url(#nodeGrad)" stroke="#4f8ef720" stroke-width="1"/>
+  <text x="288" y="313" font-family="'Courier New', monospace" font-size="9" fill="#555">QUERY</text>
+  <text x="340" y="313" font-family="'Courier New', monospace" font-size="10" fill="#4f8ef7">"What are the key findings in the research paper?"</text>
+  <rect x="640" y="302" width="80" height="22" rx="4" fill="#4f8ef715" stroke="#4f8ef730" stroke-width="1"/>
+  <text x="680" y="317" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#4f8ef7">cosine sim</text>
+  <!-- Query arrow up to pipeline -->
+  <line x1="338" y1="290" x2="338" y2="210" stroke="#4f8ef7" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+  <polygon points="333,212 338,202 343,212" fill="#4f8ef7" opacity="0.6"/>
+  <line x1="724" y1="290" x2="724" y2="238" stroke="#28c840" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+  <polygon points="719,240 724,230 729,240" fill="#28c840" opacity="0.6"/>
+
+  <!-- === OUTPUT BOX === -->
+  <rect x="268" y="366" width="492" height="70" rx="8" fill="#0f1a0f" stroke="#28c84020" stroke-width="1"/>
+  <text x="288" y="388" font-family="'Courier New', monospace" font-size="9" fill="#28c840" opacity="0.8" letter-spacing="2">OUTPUT</text>
+  <text x="288" y="406" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0" opacity="0.85">"Based on the retrieved context, the key findings indicate</text>
+  <text x="288" y="422" font-family="'Courier New', monospace" font-size="10" fill="#e2e8f0" opacity="0.85"> that semantic similarity exceeds 95% on domain queries..."</text>
+
+  <!-- Stats bar -->
+  <rect x="28" y="290" width="190" height="146" rx="8" fill="url(#nodeGrad)" stroke="#28c84015" stroke-width="1"/>
+  <text x="48" y="314" font-family="'Courier New', monospace" font-size="9" fill="#888" letter-spacing="2">METRICS</text>
+  <text x="48" y="338" font-family="'Courier New', monospace" font-size="10" fill="#28c840">accuracy</text>
+  <text x="168" y="338" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#28c840">95.4%</text>
+  <rect x="48" y="342" width="130" height="4" rx="2" fill="#1a2a1a"/>
+  <rect x="48" y="342" width="124" height="4" rx="2" fill="#28c840" opacity="0.7"/>
+  <text x="48" y="366" font-family="'Courier New', monospace" font-size="10" fill="#4f8ef7">retrieval</text>
+  <text x="168" y="366" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#4f8ef7">top-k: 5</text>
+  <rect x="48" y="370" width="130" height="4" rx="2" fill="#1a2a1a"/>
+  <rect x="48" y="370" width="100" height="4" rx="2" fill="#4f8ef7" opacity="0.7"/>
+  <text x="48" y="394" font-family="'Courier New', monospace" font-size="10" fill="#7c5af7">latency</text>
+  <text x="168" y="394" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#7c5af7">~380ms</text>
+  <rect x="48" y="398" width="130" height="4" rx="2" fill="#1a2a1a"/>
+  <rect x="48" y="398" width="70" height="4" rx="2" fill="#7c5af7" opacity="0.7"/>
+  <text x="48" y="422" font-family="'Courier New', monospace" font-size="10" fill="#f7c948">chunks</text>
+  <text x="168" y="422" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#f7c948">2,840</text>
+  <rect x="48" y="426" width="130" height="4" rx="2" fill="#1a2a1a"/>
+  <rect x="48" y="426" width="110" height="4" rx="2" fill="#f7c948" opacity="0.7"/>
+
+  <!-- Footer -->
+  <text x="450" y="478" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333" letter-spacing="3">PYTHON · MISTRAL 7B · EMBEDDINGS · FAISS · LANGCHAIN</text>
+</svg>

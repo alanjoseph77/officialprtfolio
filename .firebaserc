@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "portfolio-a21d4"
+  },
+  "targets": {
+    "portfolio-a21d4": {
+      "hosting": {
+        "portfolioalan": [
+          "portfolioalan"
+        ]
+      }
+    }
+  }
+}
