@@ -6,7 +6,7 @@
 
 - MCA (Master of Computer Applications), Mar Athanasios College, MG University, 2023–2025.
 - BCA (Bachelor of Computer Applications), Devamatha College, Kannur University, 2020–2023.
-- Core skills: React.js, Django, React Native, Flutter, Python, Power BI/DAX, ETL automation, LLM fine-tuning (Mistral, Gemini), RAG pipelines, OpenCV/TensorFlow computer vision, embedded C/C++ for IoT, Firebase, Node.js, Three.js.
+- Core skills: React.js, Django, React Native, Expo, Python, Power BI/DAX, ETL automation, LLM fine-tuning (Mistral, Gemini), RAG pipelines, OpenCV/TensorFlow computer vision, embedded C/C++ for IoT, Firebase, Node.js, Three.js.
 - Delivered data-driven solutions for Tata Motors and Government of Goa initiatives.
 
 ## Pages
